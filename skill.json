@@ -1,0 +1,41 @@
+{
+  "name": "genpark-enterprise-synthetic-presenter-video-script-pipeline-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Enterprise corporate training synthetic avatar video generator with SCORM LMS compliance packaging and multilingual localization.",
+  "author": "genpark",
+  "category": "enterprise-video",
+  "tags": [
+    "synthetic-video",
+    "corporate-training",
+    "scorm-package",
+    "multilingual-lms",
+    "synthesia"
+  ],
+  "inputs": {
+    "course_title": {
+      "type": "string"
+    },
+    "total_modules": {
+      "type": "integer"
+    },
+    "target_languages": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "video_suite_id": {
+      "type": "string"
+    },
+    "total_modules_rendered": {
+      "type": "integer"
+    },
+    "scorm_lms_compliance_package_ready": {
+      "type": "boolean"
+    },
+    "lms_bundle_zip_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
